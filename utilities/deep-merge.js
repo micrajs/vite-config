@@ -10,12 +10,12 @@ module.exports.deepMerge = function deepMerge(target, ...sources) {
     for (const key in source) {
       if (isObject(source[key])) {
         if (!target[key]) Object.assign(target, { [key]: {} });
-        mergeDeep(target[key], source[key]);
+        deepMerge(target[key], source[key]);
       } else {
         Object.assign(target, { [key]: source[key] });
       }
     }
   }
 
-  return mergeDeep(target, ...sources);
+  return deepMerge(target, ...sources);
 }
