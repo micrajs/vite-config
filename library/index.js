@@ -4,12 +4,6 @@ const { vite } = require('../vite');
 const { vitest } = require('../vitest');
 const { deepMerge } = require('../utilities/deep-merge');
 
-export function defineConfig(userConfig) {
-  return defineViteConfig(
-    deepMerge(
-      vite,
-      vitest,
-      userConfig,
-    ),
-  );
-}
+module.exports.defineConfig = function defineConfig(userConfig) {
+  return defineViteConfig(deepMerge(vite, vitest, userConfig));
+};
