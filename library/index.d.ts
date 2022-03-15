@@ -1,1 +1,1 @@
-export function defineConfig(userConfig: any): import("vite").UserConfigExport;
+export function defineConfig(userConfig: import("vite").UserConfigExport): import("vite").UserConfigExport;
