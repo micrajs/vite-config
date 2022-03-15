@@ -12,13 +12,18 @@
     "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+developer-tools%22+label:%22Type:+fix%22"
   },
   "homepage": "https://github.com/micrajs/vite-config#readme",
+  "scripts": {
+    "build:types": "pnpm tsc library/*.js --allowJs --emitDeclarationOnly --declaration"
+  },
   "peerDependencies": {
     "c8": ">= 7",
     "vite": ">= 2",
     "vitest": ">= 0.6.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "c8": ">= 7",
+    "typescript": "^4.6.2",
     "vite": ">= 2",
     "vitest": ">= 0.6.1"
   }
