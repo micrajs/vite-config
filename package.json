@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/micrajs/vite-config#readme",
   "scripts": {
-    "build:types": "pnpm tsc library/*.js --allowJs --emitDeclarationOnly --declaration"
+    "build:types": "pnpm tsc library/*.js --allowJs --emitDeclarationOnly --declaration",
+    "version:prerelease": "npm version prerelease --preid=next --allow-same-version && git push --follow-tags"
   },
   "peerDependencies": {
     "c8": ">= 7",
