@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/micrajs/vite-config#readme",
   "scripts": {
+    "build": "concurrently 'pnpm:build:*'",
     "build:types": "pnpm tsc library/*.js --allowJs --emitDeclarationOnly --declaration",
     "version:prerelease": "npm version prerelease --preid=next --allow-same-version && git push --follow-tags"
   },
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "c8": ">= 7",
+    "concurrently": "^7.0.0",
     "typescript": "^4.6.2",
     "vite": ">= 2",
     "vitest": ">= 0.6.1"
