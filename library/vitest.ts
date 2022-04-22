@@ -1,7 +1,6 @@
-/**
- * @type {import('vitest/config').UserConfig}
- */
-module.exports.vitest = {
+import type { UserConfig } from 'vitest/config';
+
+export const vitest: Partial<UserConfig> = {
   test: {
     globals: true,
     coverage: {

@@ -1,9 +1,8 @@
+import { UserConfig } from 'vitest/config';
+
 const { cwd } = require('../utilities/cwd');
 
-/**
- * @type {import('vitest/config').UserConfig}
- */
-module.exports.vite = {
+export const vite: Partial<UserConfig> = {
   build: {
     outDir: cwd('.'),
     lib: {
