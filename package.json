@@ -1,6 +1,6 @@
 {
   "name": "@micra/vite-config",
-  "version": "0.1.0-next.3",
+  "version": "0.1.0-next.4",
   "description": "Micra's Vite and Vitest configurations",
   "repository": {
     "type": "git",
