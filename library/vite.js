@@ -1,5 +1,8 @@
 const { cwd } = require('../utilities/cwd');
 
+/**
+ * @type {import('vitest/config').UserConfig}
+ */
 module.exports.vite = {
   build: {
     outDir: cwd('.'),
