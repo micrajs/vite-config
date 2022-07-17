@@ -1,3 +1,5 @@
-import { join } from 'path';
+import { join } from "path";
 
-module.exports.cwd = (...path: string[]) => join(process.cwd(), ...path);
+export function cwd(...path: string[]) {
+  return join(process.cwd(), ...path);
+}
