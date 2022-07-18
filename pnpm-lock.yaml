@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@micra/vite-config': 0.1.0-next.5
   '@types/node': ^17.0.25
   c8: ^7.11.2
   concurrently: ^7.1.0
@@ -10,6 +11,7 @@ specifiers:
   vitest: ^0.9.4
 
 devDependencies:
+  '@micra/vite-config': 0.1.0-next.5_73dyphtw7zlwjuxh5uj6lzrrdu
   '@types/node': 17.0.25
   c8: 7.11.2
   concurrently: 7.1.0
@@ -43,6 +45,18 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.0.6
       '@jridgewell/sourcemap-codec': 1.4.11
+    dev: true
+
+  /@micra/vite-config/0.1.0-next.5_73dyphtw7zlwjuxh5uj6lzrrdu:
+    resolution: {integrity: sha512-jfGdpURsgDxoFfvNaSG2Hr0avZSFMTx/P+y3RwUR3BaIrmryL6HI36K50nueojFj23Kjbqs25+0iERAbUdwqOg==}
+    peerDependencies:
+      c8: '>= 7'
+      vite: '>= 2'
+      vitest: '>= 0.6.1'
+    dependencies:
+      c8: 7.11.2
+      vite: 2.9.5
+      vitest: 0.9.4_c8@7.11.2
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
